@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#201E1A">
+<meta name="description" content="Case study — consolidating 60+ analytics tools into one adopted platform for 1,100+ users in a regulated function, by Aastha Shree.">
+<title>Case study — From 60 tools to one platform · Aastha Shree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..600;1,9..144,500..600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F3EE;--card:#FFFFFF;--ink:#1E1B17;--muted:#6C675E;--line:#E7E3DA;
+    --dark:#201E1A;--dark-2:#2C2924;--accent:#B97A2B;--accent-ink:#8C571A;--accent-bright:#E6AC5A;
+    --maxw:860px;--serif:"Fraunces",Georgia,serif;--sans:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:1.075rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  a{color:inherit}
+  em{font-family:var(--serif);font-style:italic}
+  .eyebrow{color:var(--accent-ink);font-weight:600;font-size:.9rem;letter-spacing:.02em;margin-bottom:14px}
+
+  .topbar{border-bottom:1px solid var(--line);background:rgba(245,243,238,.9);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+  .topbar a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+  .topbar a:hover{color:var(--ink)}
+  .topbar .home{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1.05rem}
+  .topbar .home span{color:var(--accent)}
+
+  header.case-head{padding:72px 0 10px}
+  header.case-head h1{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;line-height:1.05;font-size:clamp(2.3rem,6vw,3.6rem);margin:8px 0 18px}
+  .dek{font-size:1.25rem;color:#3a352d;max-width:40ch;line-height:1.45}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+  .meta b{color:var(--ink);font-weight:600}
+
+  .glance{background:var(--dark);color:#EDE8DF;border-radius:14px;padding:30px;margin:40px 0 8px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .glance div strong{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1;display:block}
+  .glance div strong span{color:var(--accent-bright)}
+  .glance div small{color:#B5AD9F;font-size:.86rem;display:block;margin-top:8px;line-height:1.35}
+
+  section.block{padding:40px 0}
+  h2{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;font-size:1.7rem;line-height:1.15;margin-bottom:16px}
+  p{max-width:68ch;margin-bottom:16px;color:#2f2b25}
+  .lead-note{font-size:1.15rem;color:var(--ink)}
+
+  .bets{display:flex;flex-direction:column;gap:2px;margin-top:8px}
+  .bet{border-top:1px solid var(--line);padding:22px 0;display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start}
+  .bet:last-child{border-bottom:1px solid var(--line)}
+  .bet .n{font-family:var(--serif);font-size:1.6rem;color:var(--accent);line-height:1}
+  .bet h3{font-size:1.2rem;margin-bottom:6px}
+  .bet p{margin-bottom:0;color:#3a352d;font-size:1rem}
+
+  .pull{font-family:var(--serif);font-size:1.5rem;line-height:1.3;color:var(--ink);border-left:3px solid var(--accent);padding:6px 0 6px 22px;margin:14px 0;max-width:40ch}
+
+  ul.clean{list-style:none;margin:6px 0 16px}
+  ul.clean li{position:relative;padding-left:22px;margin-bottom:10px;color:#2f2b25;max-width:66ch}
+  ul.clean li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+
+  .reflect{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px 32px}
+  .reflect h2{margin-bottom:10px}
+
+  .cta{border-top:1px solid var(--line);padding:48px 0 70px;text-align:left}
+  .cta h2{margin-bottom:16px}
+  .button{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;padding:12px 20px;border-radius:7px}
+  .button-dark{background:var(--ink);color:#fff}
+  .button-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+  .placeholder-note{color:var(--muted);font-size:.88rem;font-style:italic;margin-top:8px}
+
+  @media(max-width:620px){
+    .glance{grid-template-columns:1fr 1fr;gap:20px;padding:24px}
+    .bet{grid-template-columns:1fr;gap:4px}
+    .bet .n{font-size:1.3rem}
+    .button-ghost{margin-left:0;margin-top:10px}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="home" href="index.html">Aastha Shree<span>.</span></a>
+    <a href="index.html">← Back to portfolio</a>
+  </div>
+</div>
+
+<header class="case-head">
+  <div class="wrap">
+    <p class="eyebrow">Case study · Goldman Sachs</p>
+    <h1>From 60 tools to<br><em>one platform.</em></h1>
+    <p class="dek">Consolidating a fragmented analytics estate into a single product — and getting 1,100+ people in a regulated function to actually use it.</p>
+    <div class="meta">
+      <span><b>Role</b> &nbsp;VP, Senior Product Manager</span>
+      <span><b>Scope</b> &nbsp;1,100+ users · APAC, EMEA, Americas</span>
+      <span><b>Timeframe</b> &nbsp;2021 — present</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="glance">
+    <div><strong>60+ &rarr; <span>1</span></strong><small>overlapping tools consolidated into one suite</small></div>
+    <div><strong>&lt;5% &rarr; <span>20%</span></strong><small>divisional adoption — a 4&times; lift</small></div>
+    <div><strong>~62K</strong><small>hours/yr of cost-avoidance by 2025</small></div>
+    <div><strong>3</strong><small>regions on one standardised platform</small></div>
+  </div>
+</div>
+
+<main>
+  <section class="block wrap">
+    <h2>The situation</h2>
+    <p>When I took ownership of the division's analytics capability, the work was spread across 60+ overlapping tools. Teams had built whatever they needed, wherever they could — which meant duplicated effort, inconsistent numbers, and no single place anyone trusted. For a function that exists to give the firm assurance, the analytics underneath it were anything but assured.</p>
+    <p class="lead-note">The symptom looked like too many tools. The real issue was that no one owned the thing as a product.</p>
+  </section>
+
+  <section class="block wrap">
+    <h2>Framing the real problem</h2>
+    <p>It would have been easy to run this as a migration: pick a winning tool, move everyone, declare victory. I resisted that. Migrations move people off old things; they do not make anyone <em>want</em> the new one. Adoption had sat under 5% precisely because previous efforts solved for tooling, not for the user's reason to switch.</p>
+    <p>So I reframed it as a product problem with three parts: there was no single owner, no shared definition of the work, and no compelling reason for a busy auditor to change how they already got their job done. Fix those three, and consolidation would follow. Chase consolidation alone, and I would end up with a 61st tool nobody used.</p>
+    <div class="pull">“A platform people avoid is just a more expensive version of the mess you started with.”</div>
+  </section>
+
+  <section class="block wrap">
+    <h2>Constraints I had to design around</h2>
+    <ul class="clean">
+      <li><b>Governance was non-negotiable.</b> In a regulated function, anything that touches the work has to satisfy compliance and controls from the first requirement, not as a later gate.</li>
+      <li><b>I could not disrupt live work.</b> Audits were in flight across time zones; the platform had to earn its way in without ever being the reason a deadline slipped.</li>
+      <li><b>Change fatigue was real.</b> Users had been asked to move before. Another top-down mandate would have quietly died.</li>
+    </ul>
+  </section>
+
+  <section class="block wrap">
+    <h2>The bets I made</h2>
+    <div class="bets">
+      <div class="bet"><span class="n">01</span><div><h3>Treat it as one product, not a cleanup</h3><p>I set a product vision and OKRs for a single standardised suite, with a multi-quarter roadmap — so decisions were made against where we were going, not which tool shouted loudest.</p></div></div>
+      <div class="bet"><span class="n">02</span><div><h3>Consolidate by decision, not by inventory</h3><p>Rather than port 60+ tools, I decided deliberately what to keep, merge, and retire — anchored on the handful of workflows that actually drove the function's decisions.</p></div></div>
+      <div class="bet"><span class="n">03</span><div><h3>Make adoption a first-class metric</h3><p>Adoption was an OKR from day one, instrumented and visible — not a hope we checked at the end. If people were not using it, that was my problem to solve, in the product.</p></div></div>
+      <div class="bet"><span class="n">04</span><div><h3>Build trust into the product, not around it</h3><p>Governance and controls were designed in from the first requirement, which is what let a regulated function actually rely on the platform rather than route around it.</p></div></div>
+      <div class="bet"><span class="n">05</span><div><h3>Earn the switch through enablement</h3><p>I drove change with training, embedded workflows, and tight feedback loops — bringing analytics into the reviews people already ran, so the platform met them where they worked instead of demanding they come to it.</p></div></div>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <h2>What shipped</h2>
+    <ul class="clean">
+      <li>One standardised data, automation, and analytics suite replacing the sprawl, rolled out across three regions.</li>
+      <li>A roadmap and OKRs that sequenced consolidation behind the highest-value workflows first.</li>
+      <li>Self-service analytics embedded into recurring decision and review cycles, so insight arrived where decisions were already made.</li>
+      <li>Leadership dashboards tracking usage, adoption, and platform health in real time.</li>
+    </ul>
+  </section>
+
+  <section class="block wrap">
+    <h2>Results</h2>
+    <ul class="clean">
+      <li><b>Adoption rose from under 5% to roughly 20%</b> — a fourfold lift — by designing for the switch rather than mandating it.</li>
+      <li><b>~62,000 hours a year of cost-avoidance</b> by 2025, as duplicated effort and one-off analysis collapsed into reusable, self-service capability.</li>
+      <li><b>One trusted place for 1,100+ users</b> across APAC, EMEA, and the Americas — consistent numbers, shared definitions, visible health.</li>
+    </ul>
+  </section>
+
+  <section class="block wrap">
+    <div class="reflect">
+      <h2>What I would do differently</h2>
+      <p>Two things. First, I would have invested in change management and user segmentation <em>earlier</em> — sequencing the rollout by appetite, starting with the teams most ready to switch and letting their wins pull the hesitant ones, rather than treating all 1,100 users as one audience. Second, I would have been more aggressive about retiring tools sooner; leaving legacy options alive a little too long gave people a reason to hedge, which slowed the very adoption I was measuring.</p>
+      <p class="placeholder-note">Optional: add a specific anecdote here — a moment the rollout nearly stalled and what you changed — this is where interviewers lean in.</p>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <h2>My role</h2>
+    <p>I owned the product end to end: vision, roadmap, prioritisation, and the adoption strategy. I partnered closely with engineering, data, and audit stakeholders, kept governance in the loop from the first requirement, and led two Product Managers through delivery.</p>
+  </section>
+
+  <section class="cta wrap">
+    <h2>Want the rest of the story?</h2>
+    <p>Happy to walk through the decisions, the trade-offs, and the parts that did not go to plan.</p>
+    <a class="button button-dark" href="mailto:aastha.shree@gmail.com">Email Aastha ↗</a>
+    <a class="button button-ghost" href="index.html">Back to portfolio</a>
+  </section>
+</main>
+
+</body>
+</html>

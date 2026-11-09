@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#201E1A">
+<meta name="description" content="Aastha Shree — Senior Product Manager (Data, Automation & AI). I turn fragmented tooling into one product people adopt — most recently a data and GenAI suite serving 1,100+ users inside a global bank.">
+<title>Aastha Shree — Senior Product Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..600;1,9..144,500..600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ===== THEME — all colours live here; edit these 10 lines to re-theme ===== */
+    --paper:#F5F3EE;      /* warm ivory background */
+    --card:#FFFFFF;
+    --ink:#1E1B17;        /* warm near-black text */
+    --muted:#6C675E;
+    --line:#E7E3DA;
+    --dark:#201E1A;       /* charcoal band */
+    --dark-2:#2C2924;     /* cards on the dark band */
+    --accent:#B97A2B;     /* ochre — underlines, large accents */
+    --accent-ink:#8C571A; /* darker ochre — safe for small text */
+    --accent-bright:#E6AC5A; /* ochre highlight on dark surfaces */
+    /* ========================================================================= */
+    --maxw:1180px;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  a{color:inherit}
+  p{max-width:66ch}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:100}
+  .skip-link:focus{left:12px;top:12px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  em{font-family:var(--serif);font-style:italic}
+  .eyebrow{color:var(--accent-ink);font-weight:600;font-size:.9rem;letter-spacing:.02em;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+  h2{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.1}
+  h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em}
+
+  /* buttons */
+  .button{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;text-decoration:none;padding:12px 20px;border-radius:7px;transition:transform .12s,background .15s,border-color .15s,color .15s}
+  .button-light{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+  .button-light:hover{background:#000}
+  .button-resume{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .button-resume:hover{border-color:var(--ink)}
+  .button-accent{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+  .button-accent:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+  .text-link{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+  .text-link:hover{border-color:var(--accent)}
+
+  /* header */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(245,243,238,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--maxw);margin:0 auto;padding:16px 32px}
+  .wordmark{font-family:var(--serif);font-weight:600;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+  .wordmark span{color:var(--accent)}
+  .site-header nav{display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:flex-end}
+  .site-header nav a{text-decoration:none;color:var(--muted);font-size:.92rem;font-weight:500;transition:color .15s}
+  .site-header nav a:hover{color:var(--ink)}
+  .nav-resume{color:var(--ink)!important}
+  .nav-contact{color:#fff!important;background:var(--ink);padding:9px 15px;border-radius:6px}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.25fr .85fr;gap:56px;align-items:center;padding:84px 0 72px}
+  .pulse{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(185,122,43,.5);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(185,122,43,.45)}70%{box-shadow:0 0 0 10px rgba(185,122,43,0)}100%{box-shadow:0 0 0 0 rgba(185,122,43,0)}}
+  .hero h1{font-family:var(--serif);font-weight:600;letter-spacing:-.025em;line-height:1.02;font-size:clamp(2.6rem,6.2vw,4.4rem);margin-bottom:22px}
+  .hero-intro{font-size:clamp(1.1rem,2vw,1.3rem);color:#3a352d;max-width:46ch;line-height:1.45}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:32px}
+  .hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;color:var(--muted);font-size:.92rem}
+  .hero-meta span{position:relative;padding-left:16px}
+  .hero-meta span::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+  /* hero snapshot card */
+  .hero-card{position:relative;background:var(--dark);color:#EDE8DF;border-radius:16px;padding:30px 30px 26px;overflow:hidden}
+  .orbit{position:absolute;border:1px solid rgba(230,172,90,.16);border-radius:50%}
+  .orbit-one{width:280px;height:280px;top:-120px;right:-90px}
+  .orbit-two{width:170px;height:170px;bottom:-70px;left:-60px;border-color:rgba(255,255,255,.06)}
+  .card-top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.14em;color:#A49C8E;font-weight:600;position:relative}
+  .card-mark{color:var(--accent-bright)}
+  .big-number{font-family:var(--serif);font-size:3.1rem;font-weight:600;line-height:1;margin:18px 0 8px;position:relative}
+  .big-number span{font-size:1rem;font-family:var(--sans);color:#A49C8E;font-weight:500;margin-left:6px}
+  .hero-card>p{color:#C9C1B3;font-size:.95rem;max-width:none;position:relative}
+  .card-rule{height:1px;background:rgba(255,255,255,.12);margin:20px 0;position:relative}
+  .snapshot-row{display:flex;justify-content:space-between;gap:16px;font-size:.9rem;margin-bottom:11px;position:relative}
+  .snapshot-row span{color:#A49C8E}
+  .snapshot-row strong{font-weight:600;color:#F2ECE1;text-align:right}
+  .card-foot{margin-top:18px;font-size:.84rem;color:var(--accent-bright);display:flex;align-items:center;gap:8px;position:relative}
+  .mini-dot{width:7px;height:7px;border-radius:50%;background:var(--accent-bright)}
+
+  /* proof strip */
+  .proof-strip{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:40px 32px;max-width:var(--maxw);margin:0 auto}
+  .proof-grid>div{display:flex;flex-direction:column;gap:8px}
+  .proof-grid strong{font-family:var(--serif);font-size:2.4rem;font-weight:600;line-height:1}
+  .proof-grid strong span{color:var(--accent)}
+  .proof-grid small{color:var(--muted);font-size:.92rem;line-height:1.4}
+
+  /* generic section */
+  .section{padding:84px 0}
+  .section-heading,.section-title-row{margin-bottom:46px}
+  .section-title-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+  .section-title-row h2,.section-heading h2{max-width:20ch}
+  .section-note{color:var(--muted);max-width:40ch;font-size:1rem}
+
+  /* about */
+  #about{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
+  .about-copy .lead{font-size:1.25rem;color:var(--ink);font-family:var(--serif);font-weight:500;line-height:1.4;margin-bottom:20px}
+  .about-copy p{color:#3a352d;margin-bottom:16px}
+
+  /* selected work */
+  .work-section{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .project-card{border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;background:var(--paper)}
+  .project-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+  .project-index{font-family:var(--serif);font-size:1.1rem;color:var(--accent)}
+  .tag{font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+  .project-card h3{font-size:1.5rem;line-height:1.14;margin-bottom:12px}
+  .project-card>p{color:#3a352d;font-size:.98rem}
+  .project-detail{margin-top:16px;border-top:1px solid var(--line);padding-top:16px}
+  .project-detail span{display:block;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);font-weight:600;margin-bottom:7px}
+  .project-detail p{color:#4a443b;font-size:.94rem;max-width:none}
+  .project-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 20px}
+  .project-tags span{font-size:.8rem;color:var(--muted);background:rgba(0,0,0,.035);border-radius:6px;padding:4px 10px}
+  .project-bottom{margin-top:auto;display:flex;justify-content:space-between;gap:16px;font-size:.86rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+  .project-bottom span:first-child{font-weight:600;color:var(--ink)}
+  .project-featured{grid-column:1 / -1}
+  .project-featured h3{font-size:1.9rem}
+  .project-dark{background:var(--dark);border-color:var(--dark);color:#EDE8DF}
+  .project-dark h3{color:#fff}
+  .project-dark>p{color:#C9C1B3}
+  .project-dark .tag{color:#C9C1B3;border-color:rgba(255,255,255,.18)}
+  .project-dark .project-detail{border-color:rgba(255,255,255,.14)}
+  .project-dark .project-detail span{color:var(--accent-bright)}
+  .project-dark .project-detail p{color:#C9C1B3}
+  .project-dark .project-tags span{color:#D8D1C4;background:rgba(255,255,255,.08)}
+  .project-dark .project-bottom{color:#A49C8E;border-color:rgba(255,255,255,.14)}
+  .project-dark .project-bottom span:first-child{color:#fff}
+  .project-wide{grid-column:1 / -1}
+  .wide-content{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .source-note{margin-top:26px;color:var(--muted);font-size:.9rem;font-style:italic}
+
+  /* more projects */
+  .extra-project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .extra-project-card{border:1px solid var(--line);border-radius:14px;padding:28px;background:var(--card);position:relative}
+  .extra-project-number{position:absolute;top:24px;right:26px;font-family:var(--serif);font-size:1.4rem;color:var(--line)}
+  .extra-project-card h3{font-size:1.35rem;margin:4px 0 10px;max-width:22ch}
+  .extra-project-card>p{color:#3a352d;font-size:.96rem}
+  .extra-project-result{margin:16px 0;background:var(--paper);border-radius:9px;padding:14px 16px}
+  .extra-project-result strong{display:block;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:5px}
+  .extra-project-result span{color:#4a443b;font-size:.92rem}
+  .extra-project-card.placeholder{border-style:dashed;background:transparent}
+  .extra-project-card.placeholder h3{color:var(--muted)}
+  .extra-project-card.placeholder .hint{color:var(--muted);font-size:.94rem}
+  .extra-project-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-weight:600;font-size:.92rem;color:var(--accent-ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+  .extra-project-link:hover{border-color:var(--accent)}
+  .extra-project-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px}
+  .extra-project-links .extra-project-link{margin-top:0}
+  .project-link{display:inline-flex;align-items:center;gap:6px;margin:2px 0 20px;font-weight:600;font-size:.92rem;color:var(--accent-ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;align-self:flex-start}
+  .project-link:hover{border-color:var(--accent)}
+  .project-dark .project-link{color:var(--accent-bright)}
+
+  /* approach */
+  .approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .approach-grid article{border-top:2px solid var(--accent);padding-top:18px}
+  .approach-grid span{font-family:var(--serif);font-size:1.1rem;color:var(--accent)}
+  .approach-grid h3{font-size:1.2rem;margin:10px 0 8px}
+  .approach-grid p{color:#4a443b;font-size:.95rem}
+
+  /* journey */
+  .journey-section{background:var(--dark);color:#EDE8DF}
+  .journey-section .eyebrow{color:var(--accent-bright)}
+  .journey-section h2{color:#fff}
+  .journey-section .section-note{color:#A49C8E}
+  .timeline{position:relative;margin-top:10px}
+  .timeline-item{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:24px 0;border-top:1px solid rgba(255,255,255,.1)}
+  .timeline-item:last-child{border-bottom:1px solid rgba(255,255,255,.1)}
+  .timeline-date{color:var(--accent-bright);font-size:.82rem;letter-spacing:.04em;font-weight:600;padding-top:4px}
+  .timeline-marker{display:none}
+  .timeline-copy h3{font-size:1.3rem;color:#fff}
+  .timeline-copy .company{color:#C9C1B3;font-weight:600;font-size:.96rem;margin:3px 0 8px}
+  .timeline-copy .company span{color:#A49C8E;font-weight:400}
+  .timeline-copy p{color:#B5AD9F;font-size:.95rem}
+  .timeline-item.edu .timeline-copy h3,.timeline-item.brk .timeline-copy h3{font-family:var(--serif);font-style:italic;font-weight:500}
+
+  /* expertise */
+  .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px 48px}
+  .skills-grid article{border-top:1px solid var(--line);padding-top:18px}
+  .skill-icon{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:8px;background:rgba(185,122,43,.12);color:var(--accent-ink);font-weight:700;margin-bottom:12px}
+  .skills-grid h3{font-size:1.15rem;margin-bottom:8px}
+  .skills-grid p{color:var(--muted);font-size:.96rem}
+
+  /* credentials */
+  .credentials-section{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .credential-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;padding:84px 32px;max-width:var(--maxw);margin:0 auto}
+  .credential-list>div{border-top:1px solid var(--line);padding:16px 0}
+  .credential-list span{display:block;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-ink);font-weight:600;margin-bottom:6px}
+  .credential-list strong{display:block;font-size:1.02rem}
+  .credential-list small{color:var(--muted);font-size:.9rem}
+
+  /* books & travel */
+  .beyond-section{padding:84px 0}
+  .beyond-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px}
+  .beyond-card{border:1px solid var(--line);border-radius:14px;padding:30px;background:var(--card)}
+  .beyond-card h3{font-size:1.4rem;margin-bottom:6px}
+  .beyond-card>p{color:#4a443b;font-size:.96rem;margin-bottom:18px}
+  .beyond-list{display:flex;flex-direction:column;gap:12px}
+  .beyond-list .item{display:flex;gap:12px;align-items:baseline;border-top:1px solid var(--line);padding-top:12px}
+  .beyond-list .item b{font-family:var(--serif);color:var(--accent);font-weight:600;min-width:1.4em}
+  .beyond-list .item .hint{color:var(--muted)}
+  .beyond-list .item .filled{color:var(--ink)}
+
+  /* contact */
+  .contact-section{padding:90px 0}
+  .contact-wrap h2{color:var(--ink);max-width:16ch;margin:6px 0 18px}
+  .contact-intro{color:#3a352d;font-size:1.1rem;margin-bottom:26px}
+  .contact-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:26px;color:var(--muted)}
+  .contact-links a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+  /* footer */
+  .site-footer{border-top:1px solid var(--line);padding:30px 0}
+  .site-footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+  .site-footer .wordmark{font-size:1rem}
+  .site-footer span,.site-footer a{color:var(--muted);font-size:.88rem;text-decoration:none}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+  .reveal.d1{animation-delay:.05s}.reveal.d2{animation-delay:.14s}.reveal.d3{animation-delay:.23s}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  @media(max-width:920px){
+    .site-header{flex-direction:column;align-items:flex-start;gap:12px}
+    .site-header nav{justify-content:flex-start}
+    .site-header nav a:not(.nav-resume):not(.nav-contact){display:none}
+    .hero{grid-template-columns:1fr;gap:40px}
+    .proof-grid{grid-template-columns:1fr 1fr;gap:28px 24px}
+    #about{grid-template-columns:1fr;gap:28px}
+    .project-grid,.extra-project-grid,.wide-content{grid-template-columns:1fr}
+    .approach-grid{grid-template-columns:1fr 1fr}
+    .skills-grid{grid-template-columns:1fr}
+    .credential-grid{grid-template-columns:1fr;gap:28px;padding:60px 32px}
+    .timeline-item{grid-template-columns:1fr;gap:6px}
+    .beyond-grid{grid-template-columns:1fr}
+    .wrap{padding:0 22px}
+  }
+  @media(max-width:520px){.proof-grid,.approach-grid{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{animation:none;opacity:1;transform:none}
+    .pulse{animation:none}
+    *{transition:none!important}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="#top" aria-label="Aastha Shree, home">Aastha Shree<span>.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#work">Selected work</a>
+    <a href="#more-projects">Side projects</a>
+    <a href="#journey">Career</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#beyond">Books &amp; travel</a>
+    <a class="nav-resume" href="Aastha-Shree-Resume.pdf" download>Download résumé ↓</a>
+    <a class="nav-contact" href="#contact">Let’s connect ↗</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow reveal d1"><span class="pulse"></span> Senior Product Manager · Bengaluru, India</p>
+      <h1 class="reveal d2">Products that<br><em>earn their place.</em></h1>
+      <p class="hero-intro reveal d3">I’m a product leader who turns complex, ambiguous problems into products that ship and scale — across data, automation, and AI, in environments where governance is not optional.</p>
+      <div class="hero-actions reveal d3">
+        <a class="button button-light" href="#work">Explore selected work ↓</a>
+        <a class="button button-resume" href="Aastha-Shree-Resume.pdf" download>Download résumé ↓</a>
+        <a class="text-link" href="mailto:aastha.shree@gmail.com">Get in touch ↗</a>
+      </div>
+      <div class="hero-meta reveal d3"><span>9+ years in product</span><span>Data · Automation · AI</span><span>Open to senior PM roles</span></div>
+    </div>
+    <aside class="hero-card reveal d2" aria-label="Platform snapshot">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="card-top"><span>PLATFORM SNAPSHOT</span><span class="card-mark">✳</span></div>
+      <div class="big-number">1,100+<span>users</span></div>
+      <p>One standardised data, automation &amp; AI suite serving Internal Audit across three regions.</p>
+      <div class="card-rule"></div>
+      <div class="snapshot-row"><span>Core focus</span><strong>Strategy &rarr; delivery</strong></div>
+      <div class="snapshot-row"><span>Operating style</span><strong>Outcome-first, governed</strong></div>
+      <div class="snapshot-row"><span>Domains</span><strong>Finance · Retail · Telecom</strong></div>
+      <div class="card-foot"><span class="mini-dot"></span> Built within compliance guardrails</div>
+    </aside>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <section class="proof-strip" aria-label="Career highlights">
+    <div class="proof-grid">
+      <div><strong>9<span>+</span></strong><small>years in product;<br>14 across industries</small></div>
+      <div><strong>1,100<span>+</span></strong><small>users across APAC,<br>EMEA &amp; the Americas</small></div>
+      <div><strong>4<span>×</span></strong><small>adoption lift<br>(&lt;5% &rarr; 20%)</small></div>
+      <div><strong>~62K</strong><small>hours/yr of<br>cost-avoidance</small></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section wrap" id="about">
+    <div class="section-heading"><p class="eyebrow">01 / About</p><h2>Own the problem.<br><em>Ship the product.</em></h2></div>
+    <div class="about-copy">
+      <p class="lead">I’m a product leader with 9+ years in product management and 14 years across financial services, retail, and telecom — currently a VP and Senior Product Manager at Goldman Sachs.</p>
+      <p>I own the vision, roadmap, and delivery for a data, automation, and AI platform serving 1,100+ users across three regions — consolidating 60+ fragmented tools into one standardised suite, growing adoption fourfold, and scoping GenAI products within compliance and governance guardrails.</p>
+      <p>I care about outcomes over output: products that actually get used, metrics that move, and teams that ship and learn fast. Earlier roles span intelligent automation at KPMG, retail consulting at Cognizant, and software delivery in telecom.</p>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section class="section work-section" id="work">
+    <div class="wrap">
+      <div class="section-title-row"><div><p class="eyebrow">02 / Selected work</p><h2>Outcomes that outlasted<br><em>the launch.</em></h2></div><p class="section-note">A selection of products and programs where adoption and savings — not just delivery — were the point.</p></div>
+      <div class="project-grid">
+
+        <article class="project-card project-featured">
+          <div class="project-head"><span class="project-index">01</span><span class="tag">Platform · Adoption</span></div>
+          <h3>Sixty tools into<br>one platform</h3>
+          <p>At Goldman Sachs, I consolidated 60+ siloed tools into a single standardised data-analytics and automation suite for 1,100+ users across APAC, EMEA, and the Americas.</p>
+          <div class="project-detail"><span>What I did</span><p>Defined the product vision, OKRs, and a multi-quarter roadmap; drove adoption from under 5% to 20% through rollout strategy, training, and feedback loops; and tracked usage and cost-avoidance on leadership dashboards — roughly 62,000 hours/yr avoided by 2025.</p></div>
+          <div class="project-tags"><span>Vision &amp; roadmap</span><span>OKRs</span><span>Change management</span><span>Adoption analytics</span></div>
+          <a class="project-link" href="case-consolidation.html">Read the full case study ↗</a>
+          <div class="project-bottom"><span>VP, Senior Product Manager · Goldman Sachs</span><span>2021—Present</span></div>
+        </article>
+
+        <article class="project-card project-dark">
+          <div class="project-head"><span class="project-index">02</span><span class="tag">GenAI · Governance</span></div>
+          <h3>GenAI that ships<br>inside the guardrails</h3>
+          <p>Scoped and prioritised GenAI use cases in a regulated function — assistants, retrieval-based knowledge, and document summarisation.</p>
+          <div class="project-detail"><span>What I did</span><p>Defined requirements, evaluation criteria, and pilot success measures with engineering and business teams, building a repeatable path from idea to piloted AI feature that respects compliance and governance from the first requirement.</p></div>
+          <div class="project-tags"><span>GenAI/LLM PM</span><span>RAG</span><span>Evaluation</span><span>Governance</span></div>
+          <div class="project-bottom"><span>VP, Senior Product Manager · Goldman Sachs</span><span>2021—Present</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head"><span class="project-index">03</span><span class="tag">Delivery · Operations</span></div>
+          <h3>A delivery engine,<br>not a backlog</h3>
+          <p>Lifted team velocity ~30% across a 30+ engineer organisation with a fail-fast operating model.</p>
+          <div class="project-detail"><span>What I did</span><p>Restructured a program-level Jira architecture for dependency management and built automated eazyBI and Smartsheet dashboards giving leadership real-time KPI and project-health visibility.</p></div>
+          <div class="project-tags"><span>Agile</span><span>Jira</span><span>eazyBI</span><span>Smartsheet</span></div>
+          <div class="project-bottom"><span>VP, Senior Product Manager · Goldman Sachs</span><span>2021—Present</span></div>
+        </article>
+
+        <article class="project-card project-soft">
+          <div class="project-head"><span class="project-index">04</span><span class="tag">Automation · GTM</span></div>
+          <h3>Automation in<br>a new market</h3>
+          <p>Stood up KPMG’s intelligent-automation platform in India — product, delivery, and go-to-market.</p>
+          <div class="project-detail"><span>What I did</span><p>Owned platform setup, client onboarding, and GTM; led a team of four; drove a 65% proposal win rate and 30% faster execution on a UK bank transformation delivered via RPA.</p></div>
+          <div class="project-tags"><span>RPA</span><span>Pre-sales</span><span>GTM</span><span>Delivery</span></div>
+          <div class="project-bottom"><span>Manager, Digital Transformation · KPMG</span><span>2018—2021</span></div>
+        </article>
+
+        <article class="project-card project-wide">
+          <div class="project-head"><span class="project-index">05</span><span class="tag">Automation · Telecom</span></div>
+          <div class="wide-content">
+            <div><h3>Early automation,<br>at real scale</h3><p>As an SME and application owner for a major US telecom, I drove automation across service-order and staffing workflows.</p></div>
+            <div class="project-detail"><span>What I did</span><p>Delivered automation programs cutting ~30% runtime and ~75% of manual effort for 40,000+ users — the systems grounding that still shapes how I scope and ship products.</p></div>
+          </div>
+          <div class="project-tags"><span>Process automation</span><span>SME ownership</span><span>Scale</span><span>Telecom</span></div>
+          <div class="project-bottom"><span>Senior Software Engineer · Accenture</span><span>2007—2011</span></div>
+        </article>
+
+      </div>
+      <p class="source-note">Descriptions summarise work from my résumé. Confidential client and firm details are shared only where appropriate.</p>
+    </div>
+  </section>
+
+  <!-- MORE PROJECTS -->
+  <section class="section" id="more-projects">
+    <div class="wrap">
+      <div class="section-title-row"><div><p class="eyebrow">03 / Side projects</p><h2>Things I build<br><em>for the love of it.</em></h2></div><p class="section-note">Where I get to be the user, the PM, and the builder all at once.</p></div>
+      <div class="extra-project-grid">
+
+        <article class="extra-project-card">
+          <span class="extra-project-number">A</span>
+          <p class="eyebrow">Side project · Sprout</p>
+          <h3>Sprout: a privacy-first reading app for kids</h3>
+          <p>A mobile web app — added straight from the browser, no App Store — that gets young children reading. Kids pick an avatar and reading name, track books and minutes read, collect new words in a “word jar,” and earn stickers, with a separate grown-ups area for setup and data.</p>
+          <div class="extra-project-result"><strong>Live two-week pilot · privacy by design</strong><span>Everything stays on the device — no account, no server, no ads. The only thing that leaves the phone is a single dictionary lookup when a child taps a word, with nothing identifying attached.</span></div>
+          <div class="project-tags"><span>PWA</span><span>Kids UX</span><span>Reading</span><span>On-device / privacy</span></div>
+          <a class="extra-project-link" href="https://sprout-pilot.netlify.app" target="_blank" rel="noreferrer">Open Sprout ↗</a>
+        </article>
+
+        <article class="extra-project-card placeholder">
+          <span class="extra-project-number">B</span>
+          <p class="eyebrow">Side project · In progress</p>
+          <h3>Next build, in the works</h3>
+          <p class="hint">A second project is underway — I’ll add it here once it’s ready to show.</p>
+        </article>
+
+      </div>
+      <p class="source-note">Sprout is a personal project, currently running as a small two-week pilot.</p>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section wrap" id="approach">
+    <div class="section-title-row"><div><p class="eyebrow">04 / How I work</p><h2>From problem<br><em>to product.</em></h2></div><p class="section-note">I run the whole arc — from framing the real problem to proving the product moved the business.</p></div>
+    <div class="approach-grid">
+      <article><span>01</span><h3>Frame the problem</h3><p>User interviews and working groups to separate the real problem from the requested feature.</p></article>
+      <article><span>02</span><h3>Define what matters</h3><p>Vision, OKRs, and a roadmap; PRDs and stories with clear acceptance criteria; MoSCoW to prioritise.</p></article>
+      <article><span>03</span><h3>Ship &amp; learn</h3><p>Agile delivery, experimentation, and a bias to redirect effort to the highest-ROI work.</p></article>
+      <article><span>04</span><h3>Land it &amp; measure impact</h3><p>Rollout, enablement, and feedback loops; usage, engagement, and cost-avoidance tracked on dashboards.</p></article>
+    </div>
+  </section>
+
+  <!-- CAREER JOURNEY -->
+  <section class="journey-section" id="journey">
+    <div class="wrap">
+      <div class="section-title-row"><div><p class="eyebrow">05 / Career journey</p><h2>The path<br><em>here.</em></h2></div><p class="section-note">From software delivery to product leadership, across financial services, retail, and telecom.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">SEP 2021 — PRESENT</div><div class="timeline-copy"><h3>VP — Senior Product Manager, Data Analytics &amp; AI</h3><p class="company">Goldman Sachs <span>· Bengaluru</span></p><p>Own vision, roadmap, and delivery for a data, automation, and AI suite serving 1,100+ users; consolidation, GenAI product management, and delivery operations; lead two Product Managers.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">DEC 2018 — SEP 2021</div><div class="timeline-copy"><h3>Manager, Digital Transformation</h3><p class="company">KPMG Advisory <span>· Bengaluru</span></p><p>India lead for KPMG’s intelligent-automation platform — product, delivery, and go-to-market across retail and financial services, including a UK bank transformation.</p></div></article>
+        <article class="timeline-item brk"><div class="timeline-date">AUG 2015 — DEC 2018</div><div class="timeline-copy"><h3>Career break</h3><p>A planned break from full-time work, before returning to product and transformation work at KPMG.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">APR 2013 — AUG 2015</div><div class="timeline-copy"><h3>Consultant, Retail &amp; Consumer Goods</h3><p class="company">Cognizant <span>· Chennai</span></p><p>Functional lead and SME for US retail and consumer-goods clients across merchandising, warehousing, and distribution.</p></div></article>
+        <article class="timeline-item edu"><div class="timeline-date">2011 — 2013</div><div class="timeline-copy"><h3>MBA, Marketing &amp; Product Management</h3><p class="company">Indian Institute of Management, Bangalore</p><p>Full-time MBA; foundation for the pivot from engineering into product.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">JUN 2007 — MAY 2011</div><div class="timeline-copy"><h3>Senior Software Engineer, Telecom</h3><p class="company">Accenture Services <span>· Bengaluru</span></p><p>SME and application owner for service-order and staffing modules for a major US telecom; drove automation delivering ~30% runtime improvement for 40,000+ users.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="section wrap" id="expertise">
+    <div class="section-title-row"><div><p class="eyebrow">06 / Expertise</p><h2>Frameworks help.<br><em>Judgment ships.</em></h2></div><p class="section-note">A practical mix of product leadership, AI delivery, analytics, and the tools to run it.</p></div>
+    <div class="skills-grid">
+      <article><span class="skill-icon">◎</span><h3>Product &amp; delivery</h3><p>Product vision · multi-quarter roadmaps · OKRs · Working Backwards / PRFAQ · MoSCoW · PRDs &amp; user stories · Agile/Scrum · experimentation &amp; A/B testing · GTM &amp; rollout</p></article>
+      <article><span class="skill-icon">✴</span><h3>AI &amp; analytics</h3><p>GenAI/LLM product management · AI assistants · RAG · document summarisation · AI evaluation &amp; quality metrics · self-service analytics &amp; BI · RPA &amp; intelligent automation</p></article>
+      <article><span class="skill-icon">▦</span><h3>Tools &amp; technical</h3><p>Jira · Confluence · Miro · Figma · Tableau · Power BI · Smartsheet · eazyBI · Microsoft Copilot · SQL &amp; Python (working) · GitHub · CI/CD (working)</p></article>
+      <article><span class="skill-icon">◇</span><h3>Leadership</h3><p>Cross-functional leadership across Engineering, Data, UX &amp; business · program &amp; stakeholder management · hiring &amp; developing PMs · 6+ years people management · global matrixed orgs</p></article>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section class="credentials-section">
+    <div class="credential-grid">
+      <div><p class="eyebrow">07 / Credentials</p><h2>Learning that<br><em>keeps compounding.</em></h2></div>
+      <div class="credential-list">
+        <div><span>Certification · Scrum Alliance</span><strong>CSP-PO · A-CSPO · CSPO · CSM</strong><small>Certified Scrum Professional &amp; Product Owner track (2018–2025)</small></div>
+        <div><span>Certification · 2025</span><strong>Generative AI Essentials — DeepLearning.AI</strong></div>
+        <div><span>Education · 2011—2013</span><strong>MBA, Marketing &amp; Product Management</strong><small>Indian Institute of Management, Bangalore</small></div>
+        <div><span>Education · 2003—2007</span><strong>B.Tech, Electronics &amp; Communication</strong><small>Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS & TRAVEL -->
+  <section class="beyond-section wrap" id="beyond">
+    <div class="section-title-row"><div><p class="eyebrow">08 / Beyond work</p><h2>What keeps me<br><em>curious.</em></h2></div><p class="section-note">Good product instincts come from a wide field of view. Two things keep mine wide — what I’m reading, and where I’m headed next.</p></div>
+    <div class="beyond-grid">
+      <article class="beyond-card">
+        <h3>On my shelf</h3>
+        <p>Books that shaped how I think — about products, people, and everything in between.</p>
+        <div class="beyond-list">
+          <div class="item"><b>1</b><span class="hint">A book that changed how you work</span></div>
+          <div class="item"><b>2</b><span class="hint">The one you recommend most often</span></div>
+          <div class="item"><b>3</b><span class="hint">What you’re reading right now</span></div>
+        </div>
+      </article>
+      <article class="beyond-card">
+        <h3>On the map</h3>
+        <p>Places that stayed with me — and the next ones on the list.</p>
+        <div class="beyond-list">
+          <div class="item"><b>→</b><span class="hint">A trip you’d do again tomorrow</span></div>
+          <div class="item"><b>→</b><span class="hint">A place you keep returning to</span></div>
+          <div class="item"><b>→</b><span class="hint">Somewhere next on your list</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="wrap contact-wrap">
+      <p class="eyebrow">09 / Let’s connect</p>
+      <h2>Have a product that<br><em>needs to get used?</em></h2>
+      <p class="contact-intro">I’m open to senior product leadership roles in data, automation, and AI. The fastest way to reach me is email.</p>
+      <a class="button button-accent" href="mailto:aastha.shree@gmail.com">Email Aastha ↗</a>
+      <div class="contact-links">
+        <a href="mailto:aastha.shree@gmail.com">aastha.shree@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aasthashree" target="_blank" rel="noreferrer">LinkedIn profile ↗</a>
+        <span>Bengaluru, India</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="wordmark" href="#top">Aastha Shree<span>.</span></a>
+    <span>© <span id="year">2026</span> Aastha Shree · Senior Product Manager</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
